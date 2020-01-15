@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,700i&display=swap');
+body {
+    overflow-x: hidden;
+    font-family: 'Rubik', sans-serif;
+    color: #505962;
+    background: #060c21;
+}
+
+
+/* Navbar */
+
+.navbar {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+    background: rgba(0, 0, 0, .6)!important;
+}
+
+.navbar-brand img {
+    height: 5rem;
+}
+
+.navbar-nav li {
+    padding-right: .6rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+    padding-top: .8rem;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #BFFF00;
+}
+
+.carousel-caption {
+    background: rgba(73, 67, 67, 0.527)!important;
+}
+
+
+/* Slider */
+
+.carousel-item {
+    height: 100vh;
+}
+
+.btn {
+    background: linear-gradient(90deg, #03a9f4, #1b8d61, #BFFF00, #03a9f4);
+    background-size: 400%;
+    border-radius: 60px;
+    z-index: 1;
+}
+
+.btn:hover {
+    animation: animate 8s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 400%;
+    }
+}
+
+
+/*============= Design SECTION =============*/
+
+.narrow {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
+.narrow h1 {
+    padding-left: 1rem;
+}
+
+.narrow h2 {
+    padding-left: 1rem;
+}
+
+.btn-md {
+    border-width: medium;
+    border-radius: 0;
+    padding: .6rem 1.1rem;
+    text-transform: uppercase;
+    margin: 1rem;
+}
+
+.col-12 {
+    font-family: 'Indie Flower', cursive!important;
+    background-color: #E5E7E9;
+    background-size: 100;
+}
+
+
+/* Portfolio Section*/
+
+.jumbotron {
+    margin-bottom: 0rem!important;
+}
+
+.heading {
+    height: 100%;
+    text-align: center;
+    font-size: 100;
+    font-family: 'Anton', sans-serif!important;
+}
+
+
+/* Portfolio Styles*/
+
+.portfolio-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio-item-wrapper {
+    position: relative;
+}
+
+.portfolio-img-background {
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 165px;
+    padding-right: 100px;
+}
+
+.img-text-wrapper .subtitle {
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+    margin-right: 5rem;
+    font-family: 'Indie Flower', cursive;
+    font-style: italic;
+    font-size: 2rem;
+    outline: hidden;
+    outline-style: outset;
+}
+
+.sloganFix {
+    outline-width: 1rem;
+}
+
+.img-text-wrapper:hover .subtitle {
+    font-weight: 600;
+    outline-color: #BFFF00;
+    color: grey;
+    border-color: azure;
+}
+
+.img-darken {
+    transition: 1s;
+    filter: brightness(10%);
+}
+
+
+/* Team Section*/
+
+.team-items img {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+/*Info Section*/
+
+.skewed {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.info_container {
+    position: relative;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-template-rows: auto;
+    grid-gap: 0 40px;
+}
+
+.info_container .info_box {
+    position: relative;
+    height: 400px;
+    background: #060c21;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(90, 62, 62);
+}
+
+.info_container .info_box::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    transform: skew(2deg, 2deg);
+    z-index: -1;
+}
+
+.info_container .info_box:nth-child(1):before {
+    background: linear-gradient(315deg, #ff0057, #e64a19)!important;
+}
+
+.info_container .info_box:nth-child(2):before {
+    background: linear-gradient(315deg, #89ff00, #00bcd4);
+}
+
+.info_container .info_box:nth-child(3):before {
+    background: linear-gradient(315deg, #e91e63, #5d02ff);
+}
+
+.info_container .info_box:nth-child(4):before {
+    background: linear-gradient(315deg, #ff0000, #ffc107);
+}
+
+.info_container .info_box:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    pointer-events: none;
+}
+
+.info_content {
+    position: relative;
+    padding: 20px;
+    transform: translateY(40px);
+}
+
+.info_box .info_content h2 {
+    position: absolute;
+    top: -60px;
+    right: 20px;
+    margin: 0;
+    padding: 0;
+    font-size: 10em;
+    color: rgb(255, 255, 255, .05);
+    transition: 0.5s;
+}
+
+.info_box:hover .info_content h2 {
+    top: -135px;
+}
+
+.info_box .info_content h3 {
+    margin: 0 0 10px;
+    padding: 0;
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.info_box .info_content p {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 16px;
+}
+
+.info_box .info_content a {
+    position: relative;
+    margin: 20px 0 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 1px solid #fff;
+    display: inline-block;
+    color: #fff;
+    transition: 0.5s;
+    transform: translateY(-40px);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.info_box:hover .info_content a {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.info_box .info_content a:hover {
+    color: #000;
+    background: #fff;
+}
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
