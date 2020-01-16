@@ -175,9 +175,13 @@ body {
 
 /* Team Section*/
 
-.team-items img {
+#team .team-items {
+    margin: 0;
+    padding: 0;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
 }
 
 
