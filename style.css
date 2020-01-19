@@ -3,7 +3,7 @@ body {
     overflow-x: hidden;
     font-family: 'Rubik', sans-serif;
     color: #505962;
-    background-color: rgb(3, 3, 19);
+    background-image: url(img/background2.jpg);
 }
 
 .offset:before {
@@ -120,8 +120,10 @@ body {
 
 .col-12 {
     font-family: 'Indie Flower', cursive!important;
-    background-color: #E5E7E9;
+    background: transparent;
     background-size: 100;
+    color: white;
+    text-shadow: .1rem .1rem .8rem black;
 }
 
 
@@ -131,6 +133,9 @@ body {
     border-radius: 0;
     padding: 3rem 0 2rem;
     margin-bottom: 0!important;
+    background: transparent;
+    color: white;
+    text-shadow: .1rem .1rem .8rem black;
 }
 
 .heading {
@@ -212,7 +217,15 @@ body {
 /* Team Section*/
 
 .card {
-    margin: 2rem;
+    margin: 12rem;
+    display: grid;
+    align-items: center;
+}
+
+.row {
+    margin-top: -10rem;
+    margin-bottom: -15rem;
+    margin-right: 4rem;
 }
 
 
@@ -353,7 +366,6 @@ footer {
     color: white;
     padding: 2rem 0 3rem;
     margin-top: 1rem;
-    background-color: #40474e;
 }
 
 footer img {
