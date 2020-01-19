@@ -3,7 +3,14 @@ body {
     overflow-x: hidden;
     font-family: 'Rubik', sans-serif;
     color: #505962;
-    background: #060c21;
+    background-color: rgb(3, 3, 19);
+}
+
+.offset:before {
+    height: 6rem;
+    margin-top: -6rem;
+    content: "";
+    display: block;
 }
 
 
@@ -37,6 +44,25 @@ body {
 
 .carousel-caption {
     background: rgba(73, 67, 67, 0.527)!important;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    right: 0;
+    left: 0;
+}
+
+.carousel-caption h1 {
+    font-size: 3.8rem;
+    font-weight: 700;
+    letter-spacing: .3rem;
+    text-shadow: .1rem .1rem .8rem black;
+    padding-bottom: 1rem;
+}
+
+.carousel-caption h3 {
+    font-size: 2rem;
+    text-shadow: .1rem .1rem .5rem black;
+    padding-bottom: 1.6rem;
 }
 
 
@@ -50,6 +76,7 @@ body {
     background: linear-gradient(90deg, #03a9f4, #1b8d61, #BFFF00, #03a9f4);
     background-size: 400%;
     border-radius: 60px;
+    border-width: medium;
     z-index: 1;
 }
 
@@ -101,7 +128,9 @@ body {
 /* Portfolio Section*/
 
 .jumbotron {
-    margin-bottom: 0rem!important;
+    border-radius: 0;
+    padding: 3rem 0 2rem;
+    margin-bottom: 0!important;
 }
 
 .heading {
@@ -109,6 +138,13 @@ body {
     text-align: center;
     font-size: 100;
     font-family: 'Anton', sans-serif!important;
+}
+
+.heading-underline {
+    width: 3rem;
+    height: .2rem;
+    background-color: #BFFF00;
+    margin: 0 auto 2rem;
 }
 
 
@@ -175,13 +211,8 @@ body {
 
 /* Team Section*/
 
-#team .team-items {
-    margin: 0;
-    padding: 0;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    min-height: 60vh;
+.card {
+    margin: 2rem;
 }
 
 
@@ -313,6 +344,66 @@ body {
 .info_box .info_content a:hover {
     color: #000;
     background: #fff;
+}
+
+
+/* Contact  */
+
+footer {
+    color: white;
+    padding: 2rem 0 3rem;
+    margin-top: 1rem;
+    background-color: #40474e;
+}
+
+footer img {
+    height: 12rem;
+    margin: 1.5rem 0;
+}
+
+footer a {
+    color: white;
+}
+
+footer svg.svg-inline--fa {
+    font-size: 1.6rem;
+    margin: 1.2rem .5rem 0 0;
+}
+
+footer svg.svg-inline--fa:hover {
+    color: #BFFF00;
+}
+
+hr.socket {
+    border-top: .2rem solid #BFFF00;
+    width: 100%;
+}
+
+
+/* Media Queries */
+
+@media (max-width: 767px) {
+    .carousel-caption h1 {
+        font-size: 2.3rem;
+        letter-spacing: .15rem;
+        padding-bottom: .5rem;
+    }
+    .carousel-caption h3 {
+        font-size: 1.2rem;
+        padding-bottom: 1.2rem;
+    }
+    .btn {
+        background: linear-gradient(90deg, #03a9f4, #1b8d61, #BFFF00, #03a9f4);
+        background-size: 400%;
+        font-size: 1rem;
+        z-index: 1;
+    }
+    .narrow h1 {
+        font-size: 1.5rem;
+    }
+    p.lead {
+        font-size: 1rem;
+    }
 }
 
 
